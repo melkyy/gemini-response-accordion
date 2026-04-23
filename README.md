@@ -5,6 +5,7 @@ A Google Chrome extension that converts long Gemini response messages into compa
 # Overview
 
 This Chrome extension refactors the visual layout of Gemini responses. By compressing long messages into dynamic accordion components, it significantly improves readability and makes browsing chat history much faster.
+
 ⚠️⚠️⚠️ Note: The extension may experience lag. Ensure it is turned off when switching between chats.
 
 ⚠️⚠️⚠️ Disclaimer: Future Gemini website updates may cause performance issues. Please contact me if you experience persistent lag.
