@@ -1,0 +1,73 @@
+/* 1. The Container */
+.extension-chat-acordion-item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* 2. The Wrapper (The part that hides/shows) */
+.extension-chat-accordion-wrapper {
+  display: grid;
+  grid-template-rows: 0fr; /* Collapsed state */
+  transition: grid-template-rows 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+/* 3. The Active State - The "Magic" fix for white space */
+.extension-chat-acordion-item.active .extension-chat-accordion-wrapper {
+  grid-template-rows: 1fr; /* Expands exactly to content size */
+}
+
+.extension-chat-accordion-header {
+  width: 100%;
+  padding: 15px;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.extension-chat-accordion-header:hover {
+  background-color: #f9f9f9;
+}
+
+.markdown.markdown-main-panel.enable-updated-hr-color {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background-color: #ffffff;
+}
+
+.markdown.markdown-main-panel.enable-updated-hr-color p {
+  padding: 0 15px 15px 15px;
+  margin: 0;
+  color: #666;
+}
+
+.extension-chat-acordion-item.active .markdown.markdown-main-panel.enable-updated-hr-color {
+  max-height: 5000px;
+}
+
+.extension-chat-acordion-item {
+  border-bottom: 1px solid #eee;
+  width: 100% !important; /* Force full width */
+  max-width: 100% !important; /* Remove the 400px limit */
+  display: block;
+  box-sizing: border-box; /* Ensures padding doesn't add to width */
+}
+
+.extension-chat-accordion-header {
+  width: 100%;
+  display: flex; 
+  justify-content: flex-start;
+  padding: 15px;
+}
+
+.presented-response-container {
+  min-height: 0;
+  padding: 0;
+  margin: 0;
+}

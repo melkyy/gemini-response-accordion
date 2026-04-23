@@ -1,0 +1,22 @@
+/* Focus Mode: Hide the accordion headers */
+body.focus-mode .extension-chat-accordion-header {
+  display: none !important;
+}
+
+/* Focus Mode: Reset the response container to full height and normal style */
+body.focus-mode .presented-response-container {
+  max-height: none !important;
+  overflow: visible !important;
+  border: none !important;
+  padding: 0 !important;
+}
+
+/* Optional: Remove the border of the accordion item in focus mode */
+body.focus-mode .extension-chat-acordion-item {
+  border: none !important;
+  margin: 0 !important;
+}
+
+.extension-chat-accordion-header {
+  display: none;
+}
